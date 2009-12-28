@@ -1,0 +1,570 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文（中华人民共和国） resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"
+        BEGIN
+            VALUE "FileDescription", "YDsys ObjectARX application"
+            VALUE "FileVersion", "1, 0, 0, 1"
+            VALUE "InternalName", "YDsys"
+            VALUE "LegalCopyright", "Copyright ?2002"
+            VALUE "OriginalFilename", "12345678YDsys.arx"
+            VALUE "ProductName", "YDsys Application"
+            VALUE "ProductVersion", "1, 0, 0, 1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DLG_XMINPUT DIALOGEX 0, 0, 306, 325
+STYLE DS_SETFONT | DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "蓝线属性"
+FONT 9, "宋体", 400, 0, 0x86
+BEGIN
+    GROUPBOX        "项目基本信息",IDC_STATIC,6,3,291,95
+    GROUPBOX        "用地信息",IDC_STATIC,4,102,293,216
+    LTEXT           "用地面积",IDC_STATIC,11,211,33,8
+    EDITTEXT        IDC_EDIT_ZMJ,52,207,208,14,ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "拾取标注插入点位置",IDC_BTN_PT,"Button",BS_OWNERDRAW | 
+                    WS_TABSTOP,13,259,17,16
+    LTEXT           "字高",IDC_STATIC,13,245,17,8
+    LTEXT           "线宽",IDC_STATIC,116,247,17,8
+    LTEXT           "备注",IDC_STATIC,13,279,17,8
+    EDITTEXT        IDC_EDIT_BZ,36,277,251,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "修改",IDC_BTN_MODIFY,167,296,37,15
+    PUSHBUTTON      "退出",IDC_BTN_EXIT,251,296,37,15
+    LTEXT           "用地类型",IDC_STATIC,11,227,33,8
+    COMBOBOX        IDC_CMB_YDLX,51,225,102,88,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "地块编号",IDC_STATIC,157,227,33,8
+    COMBOBOX        IDC_CMB_DKBH,192,225,96,76,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "拾取标题插入点  X=",IDC_STATIC,37,261,73,8
+    EDITTEXT        IDC_EDIT_X,114,259,76,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Y=",IDC_STATIC,201,263,9,8
+    EDITTEXT        IDC_EDIT_Y,215,259,72,14,ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "选择用地",IDC_BTN_YD,"Button",BS_OWNERDRAW | WS_TABSTOP,
+                    272,205,17,16
+    COMBOBOX        IDC_CMB_ZG,51,243,42,157,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_CMB_XK,135,243,53,99,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "提交入库",IDC_BTN_SDE,11,295,37,15,BS_FLAT
+    CONTROL         "",IDC_LIST_BASE,"SysListView32",LVS_REPORT | 
+                    LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,14,17,276,74
+    CONTROL         "",IDC_LIST_YDXX,"SysListView32",LVS_REPORT | 
+                    LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,13,113,277,86
+    PUSHBUTTON      "删除",IDC_BTN_DELETE,209,296,37,15
+    PUSHBUTTON      "添加",IDC_BTN_ADD,125,296,37,15
+    EDITTEXT        IDC_EDIT_OBJ,162,207,104,14,ES_AUTOHSCROLL | ES_READONLY | 
+                    NOT WS_VISIBLE
+    LTEXT           "经办人",IDC_STATIC,208,245,24,8
+    EDITTEXT        IDC_EDIT_JBR,233,243,54,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "定位",IDC_BTN_POS,54,295,37,15
+END
+
+IDD_DLGXM_SEARCH DIALOGEX 0, 0, 295, 277
+STYLE DS_SETFONT | DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "项目查询"
+FONT 9, "宋体", 400, 0, 0x86
+BEGIN
+    GROUPBOX        "项目列表",IDC_STATIC,4,69,107,183
+    GROUPBOX        "项目详细信息",IDC_STATIC,113,69,176,183
+    GROUPBOX        "查询条件",IDC_STATIC,5,3,285,59
+    LTEXT           "条件字段",IDC_STATIC,17,19,33,8
+    COMBOBOX        IDC_CMB_FLD,54,17,54,151,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "条件内容",IDC_STATIC,194,19,33,8
+    LTEXT           "运算符",IDC_STATIC,112,19,25,8
+    COMBOBOX        IDC_CMB_OP,138,17,51,70,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "条件查询",IDC_BTN_CONDITION,238,39,39,14
+    PUSHBUTTON      "输出",IDC_BTN_OUT,191,258,39,14
+    PUSHBUTTON      "关闭",IDC_BTN_EXIT,247,258,39,14
+    PUSHBUTTON      "定位",IDC_BTN_POS,145,258,39,14
+    CONTROL         "",IDC_LIST_XM,"SysListView32",LVS_REPORT | 
+                    LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,10,80,94,166
+    CONTROL         "",IDC_LIST_XMXX,"SysListView32",LVS_REPORT | 
+                    LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,120,80,163,166
+    CONTROL         "根据选择的空间范围查询项目",IDC_BTN_RECT,"Button",
+                    BS_OWNERDRAW | WS_TABSTOP,181,39,18,16
+    LTEXT           "空间查询",IDC_STATIC,147,44,32,8
+    LTEXT           "蓝线类型",IDC_STATIC,17,39,33,8
+    COMBOBOX        IDC_CMB_LXLX,54,37,54,151,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT_CONDITION,231,17,49,12,ES_AUTOHSCROLL
+END
+
+IDD_DLG_XMYDXZ DIALOG  0, 0, 186, 95
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "ObjectARX Dialog"
+FONT 8, "Tahoma"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,129,7,50,16
+    PUSHBUTTON      "Cancel",IDCANCEL,129,26,50,16
+END
+
+IDD_DLG_READINFO DIALOGEX 0, 0, 216, 282
+STYLE DS_SETFONT | DS_MODALFRAME | DS_SETFOREGROUND | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+EXSTYLE WS_EX_TOPMOST
+CAPTION "实体信息"
+FONT 8, "Tahoma", 0, 0, 0x0
+BEGIN
+    CONTROL         "",IDC_LIST_XDATA,"SysListView32",LVS_REPORT | 
+                    LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,80,24,131,254
+    COMBOBOX        IDC_COMBO_CADLY,72,4,26,250,CBS_DROPDOWNLIST | CBS_SORT | 
+                    NOT WS_VISIBLE | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "实体列表",IDC_STATIC,5,6,34,9
+    CONTROL         "选择实体",IDC_BTN_SELECT,"Button",BS_OWNERDRAW | 
+                    WS_TABSTOP,125,2,21,16
+    LTEXT           "选择实体",IDC_STATIC,168,7,35,9
+    CONTROL         "",IDC_LIST_OBJ,"SysListView32",LVS_REPORT | 
+                    LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,4,24,74,254
+END
+
+IDD_DLG_LXINPUT DIALOGEX 0, 0, 283, 367
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "蓝线属性"
+FONT 9, "宋体", 400, 0, 0x86
+BEGIN
+    GROUPBOX        "项目基本信息",IDC_STATIC,4,1,273,157
+    CONTROL         "",IDC_LIST_BASE,"SysListView32",LVS_REPORT | 
+                    LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,11,12,259,118
+    GROUPBOX        "地块信息",IDC_STATIC,4,162,274,179
+    LTEXT           "选择项目地块         面积:",IDC_STATIC,35,266,106,8
+    LTEXT           "用地类型",IDC_STATIC,13,285,33,8
+    COMBOBOX        IDC_CMB_YDLX,47,282,92,88,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "地块编号",IDC_STATIC,144,286,32,8
+    COMBOBOX        IDC_CMB_DKBH,178,282,92,76,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT_ZMJ,149,262,121,14,ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "拾取地块标注插入点位置",IDC_BTN_PT,"Button",
+                    BS_OWNERDRAW | WS_TABSTOP,11,319,17,16
+    LTEXT           "备注",IDC_STATIC,143,305,17,8
+    EDITTEXT        IDC_EDIT_BZ,163,302,107,14,ES_AUTOHSCROLL
+    LTEXT           "拾取地块标题插入点  X=",IDC_STATIC,31,323,89,8
+    EDITTEXT        IDC_EDIT_X,121,321,64,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Y=",IDC_STATIC,192,325,9,8
+    EDITTEXT        IDC_EDIT_Y,207,322,63,14,ES_AUTOHSCROLL | ES_READONLY
+    PUSHBUTTON      "修改",IDC_BTN_MODIFY,156,347,37,15
+    PUSHBUTTON      "退出",IDC_BTN_EXIT,241,347,37,15
+    PUSHBUTTON      "提交入库",IDC_BTN_SDE,4,347,37,15
+    PUSHBUTTON      "删除",IDC_BTN_DELETE,198,347,37,15
+    PUSHBUTTON      "添加",IDC_BTN_ADD,114,347,37,15
+    PUSHBUTTON      "定位",IDC_BTN_POS,48,347,37,15
+    CONTROL         "",IDC_LIST_YDXX,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_ALIGNLEFT | 
+                    WS_BORDER | WS_TABSTOP,11,176,259,65
+    CONTROL         "选择项目地块",IDC_BTN_YD,"Button",BS_OWNERDRAW | 
+                    WS_TABSTOP,11,261,17,16
+    EDITTEXT        IDC_EDIT_OBJ,217,262,53,14,ES_AUTOHSCROLL | ES_READONLY | 
+                    NOT WS_VISIBLE
+    LTEXT           "字高",IDC_STATIC,13,305,17,8
+    LTEXT           "线宽",IDC_STATIC,81,305,17,8
+    COMBOBOX        IDC_CMB_ZG,35,302,41,157,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_CMB_XK,102,303,37,99,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "选择项目标注位置",IDC_STATIC,33,141,65,8
+    CONTROL         "拾取项目标注点位置",IDC_BTN_PT_T,"Button",BS_OWNERDRAW | 
+                    WS_TABSTOP,11,135,18,17
+    LTEXT           "X=",IDC_STATIC,103,141,8,8
+    EDITTEXT        IDC_EDIT_X_T,113,137,32,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Y=",IDC_STATIC,155,141,8,8
+    EDITTEXT        IDC_EDIT_Y_T,165,137,32,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "字高",IDC_STATIC,203,141,17,8
+    COMBOBOX        IDC_CMB_ZG_T,223,138,47,117,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    CONTROL         "是否从外部选址项目中复制",IDC_CHECK_XM,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,13,245,110,10
+    CONTROL         "选择其他项目标注",IDC_BTN_XM,"Button",BS_OWNERDRAW | 
+                    WS_DISABLED | WS_TABSTOP,129,243,17,16
+END
+
+IDD_DLG_SET DIALOGEX 0, 0, 252, 59
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "设置配置文件路径"
+FONT 9, "宋体", 400, 0, 0x86
+BEGIN
+    LTEXT           "草图文件路径:",IDC_STATIC,3,7,56,8
+    LTEXT           "项目文件路径:",IDC_STATIC,4,27,54,8
+    EDITTEXT        IDC_EDIT_CT,61,4,166,15,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_XM,61,23,166,15,ES_AUTOHSCROLL
+    PUSHBUTTON      "..",IDC_BTN_CT,232,3,17,16
+    PUSHBUTTON      "..",IDC_BTN_XM,232,23,17,16
+    PUSHBUTTON      "确 定",IDC_BTN_SET,199,42,50,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_DLG_XMINPUT, DIALOG
+    BEGIN
+        RIGHTMARGIN, 304
+        BOTTOMMARGIN, 322
+    END
+
+    IDD_DLGXM_SEARCH, DIALOG
+    BEGIN
+        RIGHTMARGIN, 293
+        BOTTOMMARGIN, 275
+    END
+
+    IDD_DLG_XMYDXZ, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 88
+    END
+
+    IDD_DLG_READINFO, DIALOG
+    BEGIN
+        RIGHTMARGIN, 211
+        BOTTOMMARGIN, 281
+    END
+
+    IDD_DLG_LXINPUT, DIALOG
+    BEGIN
+        LEFTMARGIN, 4
+        RIGHTMARGIN, 278
+        BOTTOMMARGIN, 362
+    END
+
+    IDD_DLG_SET, DIALOG
+    BEGIN
+        RIGHTMARGIN, 249
+        BOTTOMMARGIN, 56
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_DLG_XMINPUT DLGINIT
+BEGIN
+    IDC_CMB_YDLX, 0x403, 9, 0
+0xa8bd, 0xe8c9, 0xc3d3, 0xd8b5, "\000" 
+    IDC_CMB_YDLX, 0x403, 9, 0
+0xc0b5, 0xb7c2, 0xc3d3, 0xd8b5, "\000" 
+    IDC_CMB_YDLX, 0x403, 9, 0
+0xccc2, 0xafbb, 0xc3d3, 0xd8b5, "\000" 
+    IDC_CMB_YDLX, 0x403, 9, 0
+0xe4c6, 0xfbcb, 0xc3d3, 0xd8b5, "\000" 
+    IDC_CMB_DKBH, 0x403, 3, 0
+0x3141, "\000" 
+    IDC_CMB_DKBH, 0x403, 5, 0
+0x3141, 0x312d, "\000" 
+    IDC_CMB_DKBH, 0x403, 5, 0
+0x3141, 0x322d, "\000" 
+    IDC_CMB_DKBH, 0x403, 5, 0
+0x3141, 0x332d, "\000" 
+    IDC_CMB_DKBH, 0x403, 5, 0
+0x3141, 0x342d, "\000" 
+    IDC_CMB_DKBH, 0x403, 5, 0
+0x3141, 0x352d, "\000" 
+    IDC_CMB_ZG, 0x403, 2, 0
+0x0036, 
+    IDC_CMB_ZG, 0x403, 2, 0
+0x0037, 
+    IDC_CMB_ZG, 0x403, 2, 0
+0x0038, 
+    IDC_CMB_ZG, 0x403, 2, 0
+0x0039, 
+    IDC_CMB_ZG, 0x403, 3, 0
+0x3031, "\000" 
+    IDC_CMB_ZG, 0x403, 3, 0
+0x3131, "\000" 
+    IDC_CMB_ZG, 0x403, 3, 0
+0x3231, "\000" 
+    IDC_CMB_ZG, 0x403, 3, 0
+0x3331, "\000" 
+    IDC_CMB_ZG, 0x403, 3, 0
+0x3431, "\000" 
+    IDC_CMB_ZG, 0x403, 3, 0
+0x3531, "\000" 
+    IDC_CMB_ZG, 0x403, 3, 0
+0x3631, "\000" 
+    IDC_CMB_ZG, 0x403, 3, 0
+0x3731, "\000" 
+    IDC_CMB_ZG, 0x403, 3, 0
+0x3831, "\000" 
+    IDC_CMB_ZG, 0x403, 3, 0
+0x3931, "\000" 
+    IDC_CMB_ZG, 0x403, 3, 0
+0x3032, "\000" 
+    IDC_CMB_ZG, 0x403, 3, 0
+0x3432, "\000" 
+    IDC_CMB_ZG, 0x403, 3, 0
+0x3633, "\000" 
+    IDC_CMB_XK, 0x403, 4, 0
+0x2e30, 0x0035, 
+    IDC_CMB_XK, 0x403, 4, 0
+0x2e31, 0x0030, 
+    IDC_CMB_XK, 0x403, 4, 0
+0x2e31, 0x0035, 
+    IDC_CMB_XK, 0x403, 4, 0
+0x2e32, 0x0030, 
+    IDC_CMB_XK, 0x403, 4, 0
+0x2e32, 0x0035, 
+    IDC_CMB_XK, 0x403, 4, 0
+0x2e33, 0x0030, 
+    IDC_CMB_XK, 0x403, 4, 0
+0x2e33, 0x0035, 
+    IDC_CMB_XK, 0x403, 4, 0
+0x2e34, 0x0030, 
+    0
+END
+
+IDD_DLGXM_SEARCH DLGINIT
+BEGIN
+    IDC_CMB_FLD, 0x403, 7, 0
+0xf7c1, 0xccb3, 0xc5ba, "\000" 
+    IDC_CMB_FLD, 0x403, 5, 0
+0xa4d6, 0xc5ba, "\000" 
+    IDC_CMB_FLD, 0x403, 9, 0
+0xf3c9, 0xfac5, 0xb1ca, 0xe4bc, "\000" 
+    IDC_CMB_FLD, 0x403, 9, 0
+0xeecf, 0xbfc4, 0xfbc3, 0xc6b3, "\000" 
+    IDC_CMB_FLD, 0x403, 9, 0
+0xa8bd, 0xe8c9, 0xa5b5, 0xbbce, "\000" 
+    IDC_CMB_FLD, 0x403, 9, 0
+0xc3d3, 0xd8b5, 0xd4d0, 0xcad6, "\000" 
+    IDC_CMB_OP, 0x403, 5, 0
+0xc8b5, 0xdad3, "\000" 
+    IDC_CMB_OP, 0x403, 9, 0
+0xa3c4, 0xfdba, 0xc8b5, 0xdad3, "\000" 
+    0
+END
+
+IDD_DLG_LXINPUT DLGINIT
+BEGIN
+    IDC_CMB_YDLX, 0x403, 9, 0
+0xa8bd, 0xe8c9, 0xc3d3, 0xd8b5, "\000" 
+    IDC_CMB_YDLX, 0x403, 9, 0
+0xc0b5, 0xb7c2, 0xc3d3, 0xd8b5, "\000" 
+    IDC_CMB_YDLX, 0x403, 9, 0
+0xccc2, 0xafbb, 0xc3d3, 0xd8b5, "\000" 
+    IDC_CMB_YDLX, 0x403, 9, 0
+0xe4c6, 0xfbcb, 0xc3d3, 0xd8b5, "\000" 
+    IDC_CMB_DKBH, 0x403, 3, 0
+0x3141, "\000" 
+    IDC_CMB_DKBH, 0x403, 5, 0
+0x3141, 0x312d, "\000" 
+    IDC_CMB_DKBH, 0x403, 5, 0
+0x3141, 0x322d, "\000" 
+    IDC_CMB_DKBH, 0x403, 5, 0
+0x3141, 0x332d, "\000" 
+    IDC_CMB_DKBH, 0x403, 5, 0
+0x3141, 0x342d, "\000" 
+    IDC_CMB_DKBH, 0x403, 5, 0
+0x3141, 0x352d, "\000" 
+    IDC_CMB_ZG, 0x403, 2, 0
+0x0033, 
+    IDC_CMB_ZG, 0x403, 2, 0
+0x0034, 
+    IDC_CMB_ZG, 0x403, 2, 0
+0x0035, 
+    IDC_CMB_ZG, 0x403, 2, 0
+0x0036, 
+    IDC_CMB_ZG, 0x403, 2, 0
+0x0037, 
+    IDC_CMB_ZG, 0x403, 2, 0
+0x0038, 
+    IDC_CMB_ZG, 0x403, 2, 0
+0x0039, 
+    IDC_CMB_ZG, 0x403, 3, 0
+0x3031, "\000" 
+    IDC_CMB_ZG, 0x403, 3, 0
+0x3131, "\000" 
+    IDC_CMB_ZG, 0x403, 3, 0
+0x3231, "\000" 
+    IDC_CMB_ZG, 0x403, 3, 0
+0x3331, "\000" 
+    IDC_CMB_ZG, 0x403, 3, 0
+0x3431, "\000" 
+    IDC_CMB_ZG, 0x403, 3, 0
+0x3531, "\000" 
+    IDC_CMB_ZG, 0x403, 3, 0
+0x3631, "\000" 
+    IDC_CMB_ZG, 0x403, 3, 0
+0x3731, "\000" 
+    IDC_CMB_ZG, 0x403, 3, 0
+0x3831, "\000" 
+    IDC_CMB_ZG, 0x403, 3, 0
+0x3931, "\000" 
+    IDC_CMB_ZG, 0x403, 3, 0
+0x3032, "\000" 
+    IDC_CMB_ZG, 0x403, 3, 0
+0x3432, "\000" 
+    IDC_CMB_ZG, 0x403, 3, 0
+0x3633, "\000" 
+    IDC_CMB_XK, 0x403, 4, 0
+0x2e30, 0x0035, 
+    IDC_CMB_XK, 0x403, 4, 0
+0x2e31, 0x0030, 
+    IDC_CMB_XK, 0x403, 4, 0
+0x2e31, 0x0035, 
+    IDC_CMB_XK, 0x403, 4, 0
+0x2e32, 0x0030, 
+    IDC_CMB_XK, 0x403, 4, 0
+0x2e32, 0x0035, 
+    IDC_CMB_XK, 0x403, 4, 0
+0x2e33, 0x0030, 
+    IDC_CMB_XK, 0x403, 4, 0
+0x2e33, 0x0035, 
+    IDC_CMB_XK, 0x403, 4, 0
+0x2e34, 0x0030, 
+    IDC_CMB_ZG_T, 0x403, 2, 0
+0x0033, 
+    IDC_CMB_ZG_T, 0x403, 2, 0
+0x0034, 
+    IDC_CMB_ZG_T, 0x403, 2, 0
+0x0035, 
+    IDC_CMB_ZG_T, 0x403, 2, 0
+0x0036, 
+    IDC_CMB_ZG_T, 0x403, 2, 0
+0x0037, 
+    IDC_CMB_ZG_T, 0x403, 2, 0
+0x0038, 
+    IDC_CMB_ZG_T, 0x403, 2, 0
+0x0039, 
+    IDC_CMB_ZG_T, 0x403, 3, 0
+0x3031, "\000" 
+    IDC_CMB_ZG_T, 0x403, 3, 0
+0x3131, "\000" 
+    IDC_CMB_ZG_T, 0x403, 3, 0
+0x3231, "\000" 
+    IDC_CMB_ZG_T, 0x403, 3, 0
+0x3331, "\000" 
+    IDC_CMB_ZG_T, 0x403, 3, 0
+0x3431, "\000" 
+    IDC_CMB_ZG_T, 0x403, 3, 0
+0x3531, "\000" 
+    IDC_CMB_ZG_T, 0x403, 3, 0
+0x3631, "\000" 
+    IDC_CMB_ZG_T, 0x403, 3, 0
+0x3731, "\000" 
+    IDC_CMB_ZG_T, 0x403, 3, 0
+0x3831, "\000" 
+    IDC_CMB_ZG_T, 0x403, 3, 0
+0x3931, "\000" 
+    IDC_CMB_ZG_T, 0x403, 3, 0
+0x3032, "\000" 
+    IDC_CMB_ZG_T, 0x403, 3, 0
+0x3432, "\000" 
+    IDC_CMB_ZG_T, 0x403, 3, 0
+0x3633, "\000" 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_PROJNAME            "YDsys"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_BTN_AUTOREAD         "读取SDE数据"
+    ID_BTN_OPENALL          "打开所有图层"
+    ID_BTN_CLOSEALL         "关闭所有图层"
+    ID_BTN_REFURBISH        "图层刷新"
+END
+
+#endif    // 中文（中华人民共和国） resources
+/////////////////////////////////////////////////////////////////////////////
+
+

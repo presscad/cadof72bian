@@ -1,0 +1,57 @@
+Microsoft Visual Studio Solution File, Format Version 7.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "YDsys", "YDsys.vcproj", "{158A3CA3-A6F5-4E2D-94A3-AFBCF3CA9E0B}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LaunchYDC", "..\LaunchYDC\LaunchYDC.vcproj", "{C43A23E8-E7CA-4211-86A2-AF3D776CD24D}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SdeData", "..\SdeData\SdeData.vcproj", "{B4701B69-2638-4503-943E-CA32EC452C77}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DistClipPlot", "..\DistClipPlot\DistClipPlot.vcproj", "{CC6BB9E3-0D73-424A-88D9-A07505967E27}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DistLayerTree", "..\DistLayerTree\DistLayerTree.vcproj", "{3B55CD09-3BBE-4219-936F-CA5656419855}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DistToolBarManager", "..\DistToolBarManager\DistToolBarManager.vcproj", "{FC41C680-9A46-470E-973A-69229F9FDB90}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DistMenuManager", "..\DistMenuManager\DistMenuManager.vcproj", "{A1D85EB8-693C-40F0-A417-2384F640F97D}"
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		ConfigName.0 = Debug
+		ConfigName.1 = Release
+	EndGlobalSection
+	GlobalSection(ProjectDependencies) = postSolution
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{158A3CA3-A6F5-4E2D-94A3-AFBCF3CA9E0B}.Debug.ActiveCfg = Debug|Win32
+		{158A3CA3-A6F5-4E2D-94A3-AFBCF3CA9E0B}.Debug.Build.0 = Debug|Win32
+		{158A3CA3-A6F5-4E2D-94A3-AFBCF3CA9E0B}.Release.ActiveCfg = Release|Win32
+		{158A3CA3-A6F5-4E2D-94A3-AFBCF3CA9E0B}.Release.Build.0 = Release|Win32
+		{C43A23E8-E7CA-4211-86A2-AF3D776CD24D}.Debug.ActiveCfg = Debug|Win32
+		{C43A23E8-E7CA-4211-86A2-AF3D776CD24D}.Debug.Build.0 = Debug|Win32
+		{C43A23E8-E7CA-4211-86A2-AF3D776CD24D}.Release.ActiveCfg = Release|Win32
+		{C43A23E8-E7CA-4211-86A2-AF3D776CD24D}.Release.Build.0 = Release|Win32
+		{B4701B69-2638-4503-943E-CA32EC452C77}.Debug.ActiveCfg = Debug|Win32
+		{B4701B69-2638-4503-943E-CA32EC452C77}.Debug.Build.0 = Debug|Win32
+		{B4701B69-2638-4503-943E-CA32EC452C77}.Release.ActiveCfg = Release|Win32
+		{B4701B69-2638-4503-943E-CA32EC452C77}.Release.Build.0 = Release|Win32
+		{CC6BB9E3-0D73-424A-88D9-A07505967E27}.Debug.ActiveCfg = Debug|Win32
+		{CC6BB9E3-0D73-424A-88D9-A07505967E27}.Debug.Build.0 = Debug|Win32
+		{CC6BB9E3-0D73-424A-88D9-A07505967E27}.Release.ActiveCfg = Release|Win32
+		{CC6BB9E3-0D73-424A-88D9-A07505967E27}.Release.Build.0 = Release|Win32
+		{3B55CD09-3BBE-4219-936F-CA5656419855}.Debug.ActiveCfg = Debug|Win32
+		{3B55CD09-3BBE-4219-936F-CA5656419855}.Debug.Build.0 = Debug|Win32
+		{3B55CD09-3BBE-4219-936F-CA5656419855}.Release.ActiveCfg = Release|Win32
+		{3B55CD09-3BBE-4219-936F-CA5656419855}.Release.Build.0 = Release|Win32
+		{FC41C680-9A46-470E-973A-69229F9FDB90}.Debug.ActiveCfg = Debug|Win32
+		{FC41C680-9A46-470E-973A-69229F9FDB90}.Debug.Build.0 = Debug|Win32
+		{FC41C680-9A46-470E-973A-69229F9FDB90}.Release.ActiveCfg = Release|Win32
+		{FC41C680-9A46-470E-973A-69229F9FDB90}.Release.Build.0 = Release|Win32
+		{A1D85EB8-693C-40F0-A417-2384F640F97D}.Debug.ActiveCfg = Debug|Win32
+		{A1D85EB8-693C-40F0-A417-2384F640F97D}.Debug.Build.0 = Debug|Win32
+		{A1D85EB8-693C-40F0-A417-2384F640F97D}.Release.ActiveCfg = Release|Win32
+		{A1D85EB8-693C-40F0-A417-2384F640F97D}.Release.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

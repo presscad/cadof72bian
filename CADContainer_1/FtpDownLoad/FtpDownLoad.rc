@@ -1,0 +1,212 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文（中华人民共和国） resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"
+        BEGIN
+            VALUE "FileDescription", "FtpDownLoad ObjectARX application"
+            VALUE "FileVersion", "1, 0, 0, 1"
+            VALUE "InternalName", "FtpDownLoad"
+            VALUE "LegalCopyright", "Copyright ?2002"
+            VALUE "OriginalFilename", "shFtpDownLoad.arx"
+            VALUE "ProductName", "FtpDownLoad Application"
+            VALUE "ProductVersion", "1, 0, 0, 1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DLG_FILELIST DIALOGEX 0, 0, 474, 336
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_TREE,"SysTreeView32",TVS_HASBUTTONS | 
+                    TVS_HASLINES | TVS_LINESATROOT | TVS_SHOWSELALWAYS | 
+                    TVS_TRACKSELECT | WS_BORDER | WS_TABSTOP,3,1,471,315
+END
+
+IDD_FTPTRANSFER DIALOGEX 0, 0, 258, 113
+STYLE DS_SETFONT | DS_CENTER | WS_POPUP | WS_SYSMENU
+FONT 9, "宋体", 400, 0, 0x86
+BEGIN
+    LTEXT           "",IDC_STATUS,173,97,70,8
+    LTEXT           "",IDC_TRANSFER_RATE,64,97,81,8
+    LTEXT           "",IDC_TIMELEFT,65,83,180,8
+    LTEXT           "",IDC_FILESTATUS,9,55,238,8
+    CONTROL         "",IDC_PROGRESS1,"msctls_progress32",WS_BORDER,9,68,238,
+                    12
+    CONTROL         "",IDC_ANIMATE1,"SysAnimate32",ACS_CENTER | 
+                    ACS_TRANSPARENT | ACS_AUTOPLAY | WS_BORDER | WS_TABSTOP,
+                    10,8,238,42,WS_EX_ACCEPTFILES | WS_EX_TRANSPARENT
+    LTEXT           "预计剩余时间:",IDC_STATIC,9,84,53,8
+    LTEXT           "传输速度:",IDC_STATIC,10,97,37,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_DLG_FILELIST, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 334
+    END
+
+    IDD_FTPTRANSFER, DIALOG
+    BEGIN
+        RIGHTMARGIN, 256
+        BOTTOMMARGIN, 112
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// AVI
+//
+
+IDR_AVI_DOWNLOAD        AVI                     "ftpDownload.avi"
+IDR_AVI_UPLOAD          AVI                     "ftpUpload.avi"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_ICON1               ICON                    "icon1.ico"
+IDI_ICON2               ICON                    "icon2.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_PROJNAME            "FtpDownLoad"
+    IDS_FTPTRANSFER_FILESTATUS1 "%1 来自 %2"
+    IDS_FTPTRANSFER_CONNECTED "连接到 %1"
+    IDS_FTPTRANSFER_RESOLVING_NAME "Resolving name: %1"
+    IDS_FTPTRANSFER_RESOLVED_NAME "Resolved name to %1"
+    IDS_FTPTRANSFER_CONNECTING "正在连接 %1"
+    IDS_FTPTRANSFER_FAIL_OPEN_FILE "打开远程文件失败, 错误代码:%1"
+    IDS_FTPTRANSFER_GETTING_FILE_INFORMATION "获取文件信息"
+    IDS_FTPTRANSFER_FILESTATUS2 "%1 到 %2"
+    IDS_FTPTRANSFER_GENERIC_ERROR "文件传输时发生错误, 错误代码:%1"
+    IDS_FTPTRANSFER_FAIL_CONNECT_SERVER "连接FTP服务器失败, 错误代码:%1"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_FTPTRANSFER_BYTESPERSECOND "%1 字节/秒"
+    IDS_FTPTRANSFER_KILOBYTESPERSECOND "%1 KB/秒"
+    IDS_FTPTRANSFER_OK_TO_OVERWRITE "文件 '%1' 已存在\n是否覆盖?"
+    IDS_FTPTRANSFER_FAIL_LOCALFILE_OPEN1 "打开文件失败,错误代码:%1"
+    IDS_FTPTRANSFER_ABORTING_TRANSFER "取消"
+    IDS_FTPTRANSFER_FAIL_LOCALFILE_OPEN2 "打开文件失败, 错误代码:%1"
+    IDS_FTPTRANSFER_UPLOAD_CAPTION "上传文件"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_FTPTRANSFER_INVALID_SERVER_RESPONSE "服务器没有响应"
+    IDS_TRANSFER_OK_TO_OVERWRITE "服务器上已存在名为 '%1' 的文件。\n是否覆盖?"
+    IDS_FTPTRANSFER_ERROR_READFILE "下载文件时发生错误, 错误代码:%1"
+    IDS_FTPTRANSFER_PERCENTAGE "%1% 已完成"
+    IDS_FTPTRANSFER_RETREIVEING_FILE "正在接收文件"
+    IDS_FTPTRANSFER_OF      "%1 of %2"
+    IDS_FTPTRANSFER_SECONDS "%1 秒"
+    IDS_FTPTRANSFER_MINUTES "%1 分"
+    IDS_FTPTRANSFER_MINUTES_AND_SECONDS "%1 分 %2 秒"
+    IDS_FTPTRANSFER_BYTES   "%1 字节"
+    IDS_FTPTRANSFER_UPLOADING_FILE "正在上传文件"
+    IDS_FTPTRANSFER_KILOBYTES "%1 KB"
+    IDS_FTPTRANSFER_ERROR_WRITEFILE "上传文件时发生错误, 错误代码:%1"
+    IDS_FTPTRANSFER_MEGABYTES "%1 MB"
+    IDS_FTPTRANSFER_TIMELEFT "%1 (%2 已复制)"
+END
+
+#endif    // 中文（中华人民共和国） resources
+/////////////////////////////////////////////////////////////////////////////
+
+
