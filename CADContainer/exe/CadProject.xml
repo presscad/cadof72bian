@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="gb2312" ?>
+<root>
+	<bizz id="">
+		<item name="建设地址" id="" type="字符串" size="256"></item>
+		<item name="用地性质" id="" type="字符串" size="128"></item>
+		<item name="用地总面积" id="" type="浮点" size="16"></item>
+		<item name="净用地面积" id="" type="浮点" size="16"></item>
+		<item name="代征用地面积" id="" type="浮点" size="16"></item>
+		<item name="代征道路面积" id="" type="浮点" size="16"></item>
+		<item name="代征绿地面积" id="" type="浮点" size="16"></item>
+		<item name="代征河流面积" id="" type="浮点" size="16"></item>
+		<item name="代征其他用地面积" id="" type="浮点" size="16"></item>
+		<item name="容积率" id="" type="字符串" size="32"></item>
+		<item name="建筑密度" id="" type="字符串" size="32"></item>
+		<item name="绿地率" id="" type="字符串" size="32"></item>
+		<item name="建筑限高" id="" type="字符串" size="32"></item>
+		<item name="停车位" id="" type="字符串" size="32"></item>
+		<item name="许可证号" id="" type="字符串" size="40"></item>
+		<item name="经办人员" id="" type="字符串" size="32"></item>
+	</bizz>
+
+</root>

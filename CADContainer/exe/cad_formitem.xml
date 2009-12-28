@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="gb2312" ?>
+<root>
+	<bizz name="01建设项目选址意见书">
+		<item name="用地总面积" id="{}" table="SDE.SPHX_XZZFA;SDE.SPHX_XZZDA;" field="YDZMJ"></item>
+		<item name="净用地面积" id="{}" table="SDE.SPHX_XZJFA;SDE.SPHX_XZJDA;" field="JYDMJ"></item>
+		<item name="代征用地面积" id="{}" table="SDE.SPHX_XZDFA;SDE.SPHX_XZDDA;" field="DZYDMJ"></item>
+	</bizz>
+
+</root>
